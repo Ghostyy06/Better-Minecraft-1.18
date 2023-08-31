@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "the-skylands",
+	"version": "${version}",
+	"name": "The Skylands",
+	"description": "yo",
+	"authors": [
+		"dtb_ghostyy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/the-skylands/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ghostyy.Skylands"
+		],
+		"client": [
+			"net.ghostyy.SkylandsClient"
+		],
+		"fabric-datagen": [
+			"net.ghostyy.SkylandsDataGenerator"
+		]
+	},
+	"mixins": [
+		"the-skylands.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
